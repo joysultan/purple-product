@@ -1,0 +1,179 @@
+<section class="product">
+        <div class="wrapper">
+            <div class="column-1">
+                <div class="product-box">
+                    <img src="img/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg" alt="product box">
+                    <h2>High Quality Womens Product</h2>
+                    <h3>$34.00 <u>$50.00</u></h3>
+              <div class="variant size">
+                <h6>size</h6>
+                <ul>
+                    <li>
+                        <input type="radio" name="size" id="m">
+                        <label for="m">M</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="size" id="xl">
+                        <label for="xl">XL</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="size" id="xxl">
+                        <label for="xxl">XXL</label>
+                    </li>
+                </ul>
+              </div>
+              <div class="variant color">
+                <h6>color</h6>
+                <ul>
+                    <li>
+                        <input type="radio" name="color" id="red">
+                        <label for="red"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" id="purple">
+                        <label for="purple"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" id="black">
+                        <label for="black"></label>
+                    </li>
+                </ul>
+              </div>
+              <button class="add-to-cart" type="button">Buy Now  <li><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .product{
+    padding: 100px 0;
+}
+.column-1{
+    box-shadow: 0px 5px 20px #b830305c;
+    padding: 20px;
+}
+
+.wrapper{
+    width: 80%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.product-box{
+  
+}
+.product-box img{
+   width: 30%;
+
+}
+.product-box h2{
+    margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.product-box h3{
+    font-weight: 800;
+    font-size: 22px;
+}
+.product-box u{
+    text-decoration: line-through;
+}
+.variant{
+    padding: 20px 0;
+}
+.variant h6{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.variant ul{
+    display: flex;
+    list-style-type: none;
+}
+.variant ul li{
+    padding: 10px 7px;
+}
+.variant ul li input{
+    display: none;
+}
+.size ul li input:checked + label{
+    background-color: #303030;
+    color: white;
+    transition: .3s all ease-in;
+
+}
+.size ul li input + label:hover{
+    background-color: #303030;
+    color: white;
+}
+.size ul li label{
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.color ul li input:checked + label{
+    background-color: #303030;
+    color: white;
+    opacity: 1 !important;
+
+}
+
+.color ul li label{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: block;
+}
+.color ul li input + label:hover{
+    opacity: 1 !important;
+}
+.color ul li input#red +label{
+    background-color: rgb(249, 78, 78);
+    opacity: 0.8;
+}
+.color ul li input#purple +label{
+    background-color: rgb(173, 20, 219);
+    opacity: 0.8;
+}
+.color ul li input#black +label{
+    background-color: rgb(14, 13, 13)
+    ;
+    opacity: 0.8;
+}
+.add-to-cart{
+    display: flex;
+    list-style-type: none;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid cornflowerblue;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s all ease-in;
+}
+.add-to-cart:hover{
+    background-color: #303030;
+}
+.add-to-cart i{
+    padding-left: 15px;
+}

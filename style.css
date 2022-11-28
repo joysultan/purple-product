@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+}
+img{
+   max-width: 100%;
+   height: auto;
+}
+
+header{
+    background-color: aquamarine;
+    padding: 15px 0;
+}
+.container{
+    max-width: 1200px;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+   
+.logo{
+    flex-basis: 15%;
+}
+.logo a{
+    color: #f70ff7;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+}
+.logo span{
+    color: #303030;
+}
+
+
+nav{
+    flex-basis: 70%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{}
+nav ul li a{
+    text-decoration: none;
+    color: #303030;
+    font-size: 20px;
+    padding: 10px 30px;
+    display: inl;
+    display: inline-block;
+    font-weight: 900;
+    transition: .3s all ease-in;
+}
+nav ul li a:hover{
+    color: #f70ff7;
+}
+
+
+.cart{
+    flex-basis: 15%;
+}
+.cart ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.cart ul li{
+    padding: 10px;
+}
+.cart ul li i{
+    font-size: 25px;
+    color: #303030;
+}
+
+
+.product{
+    padding: 100px 0;
+}
+.column-1{
+  
+}
+
+.wrapper{
+    width: 80%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.product-box{
+    box-shadow: 0px 5px 20px #b830305c;
+    padding: 20px;
+}
+.product-box img{
+   width: 30%;
+
+}
+.product-box h2{
+    margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.product-box h3{
+    font-weight: 800;
+    font-size: 22px;
+}
+.product-box u{
+    text-decoration: line-through;
+}
+.variant{
+    padding: 20px 0;
+}
+.variant h6{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.variant ul{
+    display: flex;
+    list-style-type: none;
+}
+.variant ul li{
+    padding: 10px 7px;
+}
+.variant ul li input{
+    display: none;
+}
+.size ul li input:checked + label{
+    background-color: #303030;
+    color: white;
+    transition: .3s all ease-in;
+
+}
+.size ul li input + label:hover{
+    background-color: #303030;
+    color: white;
+}
+.size ul li label{
+    font-size: 22px;
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.color ul li input:checked + label{
+    background-color: #303030;
+    color: white;
+    opacity: 1 !important;
+
+}
+
+.color ul li label{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: block;
+}
+.color ul li input + label:hover{
+    opacity: 1 !important;
+}
+.color ul li input#red +label{
+    background-color: rgb(249, 78, 78);
+    opacity: 0.8;
+}
+.color ul li input#purple +label{
+    background-color: rgb(173, 20, 219);
+    opacity: 0.8;
+}
+.color ul li input#black +label{
+    background-color: rgb(14, 13, 13)
+    ;
+    opacity: 0.8;
+}
+.add-to-cart{
+    display: flex;
+    list-style-type: none;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid cornflowerblue;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s all ease-in;
+}
+.add-to-cart:hover{
+    background-color: #303030;
+}
+.add-to-cart i{
+    padding-left: 15px;
+}
+
+
+
+footer{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    background-color: #303030;
+    color: white;
+    padding: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
